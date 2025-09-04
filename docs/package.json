@@ -1,0 +1,17 @@
+{
+  "name": "api-docs",
+  "version": "1.0.0",
+  "description": "API Documentation Generator for Todo Application",
+  "main": "generate-docs.js",
+  "scripts": {
+    "build": "node generate-docs.js",
+    "serve": "npx http-server . -p 8080 -o api-docs.html",
+    "dev": "npm run build && npm run serve"
+  },
+  "keywords": ["api", "documentation", "openapi", "redoc"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
